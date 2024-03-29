@@ -4,4 +4,12 @@
     <string name="title_balances">Счета</string>
     <string name="title_summary">Сводка</string>
     <string name="title_miscellaneous">Прочее</string>
+
+    <string name="select">Выбрать</string>
+    <string name="create">Создать</string>
+    <string name="edit">Изменить</string>
+    <string name="save">Сохранить</string>
+    <string name="apply">Применить</string>
+
+    <string name="balance_currency">Валюта: %1$s</string>
 </resources>
