@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cash Guardian</string>
+    <string name="title_analytics">Аналитика</string>
+    <string name="title_balances">Счета</string>
+    <string name="title_summary">Сводка</string>
+    <string name="title_miscellaneous">Прочее</string>
+</resources>
