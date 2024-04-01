@@ -6,18 +6,18 @@ import android.widget.LinearLayout;
 
 import ru.teambruh.cashguardian.R;
 import ru.teambruh.cashguardian.core.Displayable;
+import ru.teambruh.cashguardian.core.UUIDOwner;
 import ru.teambruh.cashguardian.core.text.TextStyle;
 import ru.teambruh.cashguardian.core.utils.ButtonUtils;
 import ru.teambruh.cashguardian.core.utils.LinearLayoutUtils;
 import ru.teambruh.cashguardian.core.utils.TextViewUtils;
 
-public class Balance implements Displayable {
-    public String uuid;
+public class Balance extends UUIDOwner implements Displayable {
     public String name;
     public String currency;
 
     public Balance(String uuid, String name, String currency) {
-        this.uuid = uuid;
+        super(uuid);
         this.name = name;
         this.currency = currency;
     }
