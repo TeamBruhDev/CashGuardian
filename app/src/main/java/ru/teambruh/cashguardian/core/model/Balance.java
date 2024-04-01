@@ -31,7 +31,7 @@ public class Balance extends UUIDNameOwner implements Displayable {
         LinearLayout controlLayout = LinearLayoutUtils.createHorizontal(context, LinearLayoutUtils.CONTENT, LinearLayoutUtils.PARENT);
 
         infoLayout.addView(TextViewUtils.create(context, name, TextStyle.defaultStyle));
-        infoLayout.addView(TextViewUtils.create(context, context.getResources().getString(R.string.balance_currency, currency), TextStyle.defaultStyle));
+        infoLayout.addView(TextViewUtils.create(context, context.getResources().getString(R.string.balance_currency, currency.getName()), TextStyle.defaultStyle));
 
 //        controlLayout.addView(ButtonUtils.create(context, context.getResources().getString(R.string.select)));
 //        controlLayout.addView(ButtonUtils.create(context, context.getResources().getString(R.string.edit)));
