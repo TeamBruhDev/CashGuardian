@@ -1,19 +1,13 @@
 package ru.teambruh.cashguardian.core.model;
 
-import ru.teambruh.cashguardian.core.UUIDOwner;
+import ru.teambruh.cashguardian.core.UUIDNameOwner;
 
-public class Currency extends UUIDOwner {
-    protected String name;
+public class Currency extends UUIDNameOwner {
     protected double cost;
 
     protected Currency(String uuid, String name, double cost) {
-        super(uuid);
-        this.name = name;
+        super(uuid, name);
         this.cost = cost;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public double getCost() {

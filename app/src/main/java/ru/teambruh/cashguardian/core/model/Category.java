@@ -1,16 +1,9 @@
 package ru.teambruh.cashguardian.core.model;
 
-import ru.teambruh.cashguardian.core.UUIDOwner;
+import ru.teambruh.cashguardian.core.UUIDNameOwner;
 
-public class Category extends UUIDOwner {
-    protected String name;
-
+public class Category extends UUIDNameOwner {
     protected Category(String uuid, String name) {
-        super(uuid);
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
+        super(uuid, name);
     }
 }
