@@ -13,13 +13,21 @@ import ru.teambruh.cashguardian.core.utils.LinearLayoutUtils;
 import ru.teambruh.cashguardian.core.utils.TextViewUtils;
 
 public class Balance extends UUIDOwner implements Displayable {
-    public String name;
-    public String currency;
+    protected String name;
+    protected Currency currency;
 
-    public Balance(String uuid, String name, String currency) {
+    public Balance(String uuid, String name, Currency currency) {
         super(uuid);
         this.name = name;
         this.currency = currency;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Currency getCurrency() {
+        return currency;
     }
 
     @Override
