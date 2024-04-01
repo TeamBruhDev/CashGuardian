@@ -3,7 +3,7 @@ package ru.teambruh.cashguardian.core;
 public abstract class UUIDOwner {
     protected final String uuid;
 
-    protected UUIDOwner(String uuid) {
+    public UUIDOwner(String uuid) {
         this.uuid = uuid;
     }
 
