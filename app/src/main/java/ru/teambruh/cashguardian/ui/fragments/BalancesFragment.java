@@ -17,6 +17,7 @@ public class BalancesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = BalancesFragmentBinding.inflate(inflater, container, false);
+        new Balance("", "", new Currency("", "", 1)).buildNewDialog(getContext()).show();
         return binding.getRoot();
     }
 

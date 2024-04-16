@@ -1,6 +1,8 @@
 package ru.teambruh.cashguardian.core.model;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -41,5 +43,13 @@ public class Balance extends UUIDNameOwner implements Displayable {
         balanceLayout.addView(infoLayout);
         balanceLayout.addView(controlLayout);
         return balanceLayout;
+    }
+
+    public AlertDialog buildNewDialog(Context context) {
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.summary_fragment, null);
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context, R.style.Theme_CashGuardian);
+        alertDialogBuilder.setView(view);
+        return alertDialogBuilder.create();
     }
 }
