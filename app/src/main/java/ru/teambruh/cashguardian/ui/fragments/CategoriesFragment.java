@@ -8,13 +8,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import ru.teambruh.cashguardian.databinding.BalancesFragmentBinding;
+import ru.teambruh.cashguardian.databinding.CategoriesFragmentBinding;
+import ru.teambruh.cashguardian.databinding.TransactionsFragmentBinding;
 
-public class BalancesFragment extends Fragment {
-    private BalancesFragmentBinding binding;
+public class CategoriesFragment extends Fragment {
+    private CategoriesFragmentBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = BalancesFragmentBinding.inflate(inflater, container, false);
+        binding = CategoriesFragmentBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
     }
 

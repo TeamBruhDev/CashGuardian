@@ -1,29 +1,35 @@
-package ru.teambruh.cashguardian.core.model;
+package ru.teambruh.cashguardian.core.balance;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.view.LayoutInflater;
+import android.content.res.Resources;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Space;
+import android.widget.TextView;
+
+import androidx.constraintlayout.widget.ConstraintSet;
+
+import java.util.ArrayList;
 
 import ru.teambruh.cashguardian.R;
 import ru.teambruh.cashguardian.core.Displayable;
-import ru.teambruh.cashguardian.core.UUIDNameOwner;
 import ru.teambruh.cashguardian.core.text.TextStyle;
 import ru.teambruh.cashguardian.core.utils.ButtonUtils;
 import ru.teambruh.cashguardian.core.utils.LinearLayoutUtils;
 import ru.teambruh.cashguardian.core.utils.TextViewUtils;
 
-public class Balance extends UUIDNameOwner implements Displayable {
-    protected Currency currency;
+public class Balance implements Displayable {
+    public String uuid;
+    public String name;
+    public String currency;
 
-    public Balance(String uuid, String name, Currency currency) {
-        super(uuid, name);
+    public Balance(String uuid, String name, String currency) {
+        this.uuid = uuid;
+        this.name = name;
         this.currency = currency;
-    }
-
-    public Currency getCurrency() {
-        return currency;
     }
 
     @Override
@@ -33,7 +39,7 @@ public class Balance extends UUIDNameOwner implements Displayable {
         LinearLayout controlLayout = LinearLayoutUtils.createHorizontal(context, LinearLayoutUtils.CONTENT, LinearLayoutUtils.PARENT);
 
         infoLayout.addView(TextViewUtils.create(context, name, TextStyle.defaultStyle));
-        infoLayout.addView(TextViewUtils.create(context, context.getResources().getString(R.string.balance_currency, currency.getName()), TextStyle.defaultStyle));
+        infoLayout.addView(TextViewUtils.create(context, context.getResources().getString(R.string.balance_currency, currency), TextStyle.defaultStyle));
 
 //        controlLayout.addView(ButtonUtils.create(context, context.getResources().getString(R.string.select)));
 //        controlLayout.addView(ButtonUtils.create(context, context.getResources().getString(R.string.edit)));
@@ -43,13 +49,5 @@ public class Balance extends UUIDNameOwner implements Displayable {
         balanceLayout.addView(infoLayout);
         balanceLayout.addView(controlLayout);
         return balanceLayout;
-    }
-
-    public AlertDialog buildNewDialog(Context context) {
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.summary_fragment, null);
-        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context, R.style.Theme_CashGuardian);
-        alertDialogBuilder.setView(view);
-        return alertDialogBuilder.create();
     }
 }

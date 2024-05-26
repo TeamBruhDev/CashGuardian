@@ -18,10 +18,22 @@
         tools:layout="@layout/summary_fragment" />
 
     <fragment
-        android:id="@+id/navigation_balances"
-        android:name="ru.teambruh.cashguardian.ui.fragments.BalancesFragment"
-        android:label="@string/title_balances"
-        tools:layout="@layout/balances_fragment" />
+        android:id="@+id/navigation_transactions"
+        android:name="ru.teambruh.cashguardian.ui.fragments.TransactionsFragment"
+        android:label="@string/title_transactions"
+        tools:layout="@layout/transactions_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="ru.teambruh.cashguardian.ui.fragments.CategoriesFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/categories_fragment" />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/navigation_balances"-->
+    <!--        android:name="ru.teambruh.cashguardian.ui.fragments.BalancesFragment"-->
+    <!--        android:label="@string/title_balances"-->
+    <!--        tools:layout="@layout/balances_fragment" />-->
 
     <fragment
         android:id="@+id/navigation_miscellaneous"

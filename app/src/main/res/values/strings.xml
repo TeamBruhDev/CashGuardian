@@ -5,6 +5,9 @@
     <string name="title_summary">Сводка</string>
     <string name="title_miscellaneous">Прочее</string>
 
+    <string name="title_categories">Категории</string>
+    <string name="title_transactions">Транзакции</string>
+
     <string name="select">Выбрать</string>
     <string name="create">Создать</string>
     <string name="edit">Изменить</string>
@@ -12,4 +15,25 @@
     <string name="apply">Применить</string>
 
     <string name="balance_currency">Валюта: %1$s</string>
+
+    <string name="add_transaction">Провести транзакцию</string>
+    <string name="add_category">Добавить категорию</string>
+    <string name="date">Дата</string>
+    <string name="income">Доход</string>
+    <string name="expenditure">Расход</string>
+    <string name="category">Категория</string>
+    <string name="name">Название</string>
+    <string name="color">Цвет</string>
+    <string name="add">Добавить</string>
+    <string name="activation_key">Ключ активации</string>
+    <string name="input_activation_key">Ввод ключа активации</string>
+    <string name="you_are_authorized">Вы авторизованный пользователь. Теперь вам доступен весь функционал приложения.</string>
+    <string name="you_are_not_authorized">Вы не авторизованный пользователь, поэтому вам не доступен весь функционал приложения. Введите ключ для активации в поле выше.</string>
+    <string name="wrong_key">Неверный ключ. Перепроверьте правильность ввода и нажмите на кнопку обновления ключа ещё раз.</string>
+
+    <string-array name="colors_array">
+        <item>Красный</item>
+        <item>Зелёный</item>
+        <item>Синий</item>
+    </string-array>
 </resources>

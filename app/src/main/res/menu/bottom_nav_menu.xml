@@ -8,13 +8,23 @@
 
     <item
         android:id="@+id/navigation_summary"
-        android:icon="@drawable/icon_dollar"
+        android:icon="@drawable/icon_summary"
         android:title="@string/title_summary" />
 
     <item
-        android:id="@+id/navigation_balances"
-        android:icon="@drawable/icon_wallet"
-        android:title="@string/title_balances" />
+        android:id="@+id/navigation_transactions"
+        android:icon="@drawable/icon_add"
+        android:title="@string/title_transactions" />
+
+    <item
+        android:id="@+id/navigation_categories"
+        android:icon="@drawable/icon_add"
+        android:title="@string/title_categories" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_balances"-->
+    <!--        android:icon="@drawable/icon_balances"-->
+    <!--        android:title="@string/title_balances" />-->
 
     <item
         android:id="@+id/navigation_miscellaneous"
